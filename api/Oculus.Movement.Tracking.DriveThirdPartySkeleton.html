@@ -1,0 +1,704 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DriveThirdPartySkeleton
+   | Unity-Movement Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DriveThirdPartySkeleton
+   | Unity-Movement Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton">
+  
+  
+  <h1 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton" class="text-break">Class DriveThirdPartySkeleton
+  </h1>
+  <div class="markdown level0 summary"><p>Drives a target, third-party skeleton using a source as a guide.
+Source is OVRSkeleton.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DriveThirdPartySkeleton</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Oculus.Movement.Tracking.html">Oculus.Movement.Tracking</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DriveThirdPartySkeleton : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__adjustments" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._adjustments">_adjustments</h4>
+  <div class="markdown level1 summary"><p>Adjustments to apply to certain bones that need to be fixed
+post-retargeting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DriveThirdPartySkeleton.JointAdjustment[] _adjustments</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Oculus.Movement.Tracking.DriveThirdPartySkeleton.JointAdjustment.html">DriveThirdPartySkeleton.JointAdjustment</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__animatorTargetSkeleton" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._animatorTargetSkeleton">_animatorTargetSkeleton</h4>
+  <div class="markdown level1 summary"><p>Animator on target character that needs to be driven. Keep disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Animator _animatorTargetSkeleton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Animator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__animatorTargetTPose" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._animatorTargetTPose">_animatorTargetTPose</h4>
+  <div class="markdown level1 summary"><p>Animator of target character in T-pose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Animator _animatorTargetTPose</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Animator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__axisRendererSourcePrefab" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._axisRendererSourcePrefab">_axisRendererSourcePrefab</h4>
+  <div class="markdown level1 summary"><p>Axes debug prefab, source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject _axisRendererSourcePrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__axisRendererTargetPrefab" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._axisRendererTargetPrefab">_axisRendererTargetPrefab</h4>
+  <div class="markdown level1 summary"><p>Axes debug prefab, target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject _axisRendererTargetPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__bodySectionsToAlign" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._bodySectionsToAlign">_bodySectionsToAlign</h4>
+  <div class="markdown level1 summary"><p>A list of body sections to align. While all bones should be
+driven, only a subset will have their axes aligned with source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BodySection[] _bodySectionsToAlign</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BodySection</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__bodySectionsToRenderDebugText" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._bodySectionsToRenderDebugText">_bodySectionsToRenderDebugText</h4>
+  <div class="markdown level1 summary"><p>Body sections to show debug text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BodySection[] _bodySectionsToRenderDebugText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BodySection</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__bodySectionToPosition" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._bodySectionToPosition">_bodySectionToPosition</h4>
+  <div class="markdown level1 summary"><p>A list of body sections to fix the position of by matching against
+the body tracking rig. The other bones can be fixed via IK.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BodySection[] _bodySectionToPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BodySection</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__boneGizmosSource" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._boneGizmosSource">_boneGizmosSource</h4>
+  <div class="markdown level1 summary"><p>Allow visualization of gizmos for certain bones for source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HumanBodyBones[] _boneGizmosSource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HumanBodyBones</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__boneGizmosTarget" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._boneGizmosTarget">_boneGizmosTarget</h4>
+  <div class="markdown level1 summary"><p>Allow visualization of gizmos for certain bones for target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HumanBodyBones[] _boneGizmosTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HumanBodyBones</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__boneGizmosTPoseSource" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._boneGizmosTPoseSource">_boneGizmosTPoseSource</h4>
+  <div class="markdown level1 summary"><p>Allow visualization of gizmos for certain bones for source T-pose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HumanBodyBones[] _boneGizmosTPoseSource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HumanBodyBones</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__boneGizmosTPoseTarget" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._boneGizmosTPoseTarget">_boneGizmosTPoseTarget</h4>
+  <div class="markdown level1 summary"><p>Allow visualization of gizmos for certain bones for target T-pose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HumanBodyBones[] _boneGizmosTPoseTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HumanBodyBones</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__jointRendererSourcePrefab" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._jointRendererSourcePrefab">_jointRendererSourcePrefab</h4>
+  <div class="markdown level1 summary"><p>Joint renderer prefab used for source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject _jointRendererSourcePrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__jointRendererTargetPrefab" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._jointRendererTargetPrefab">_jointRendererTargetPrefab</h4>
+  <div class="markdown level1 summary"><p>Joint renderer prefab used for target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject _jointRendererTargetPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__lineRendererSourcePrefab" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._lineRendererSourcePrefab">_lineRendererSourcePrefab</h4>
+  <div class="markdown level1 summary"><p>Line renderer of source prefab, allows visual debugging in game view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject _lineRendererSourcePrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__lineRendererTargetPrefab" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._lineRendererTargetPrefab">_lineRendererTargetPrefab</h4>
+  <div class="markdown level1 summary"><p>Line renderer of target prefab, allows visual debugging in game view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject _lineRendererTargetPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__ovrSkeleton" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._ovrSkeleton">_ovrSkeleton</h4>
+  <div class="markdown level1 summary"><p>OVRSkeleton component to query bind pose and bone values from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OVRSkeleton _ovrSkeleton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OVRSkeleton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__showDebugAxes" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._showDebugAxes">_showDebugAxes</h4>
+  <div class="markdown level1 summary"><p>Show or hide debug axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _showDebugAxes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__showSkeletalDebugViews" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._showSkeletalDebugViews">_showSkeletalDebugViews</h4>
+  <div class="markdown level1 summary"><p>Show or hide skeletal debug views.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _showSkeletalDebugViews</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton__targetRenderer" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton._targetRenderer">_targetRenderer</h4>
+  <div class="markdown level1 summary"><p>Renderer of target character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Renderer _targetRenderer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Renderer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_UpdatePositions_" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.UpdatePositions*"></a>
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_UpdatePositions" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.UpdatePositions">UpdatePositions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool UpdatePositions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_ToggleDebugAxes_" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.ToggleDebugAxes*"></a>
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_ToggleDebugAxes" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.ToggleDebugAxes">ToggleDebugAxes()</h4>
+  <div class="markdown level1 summary"><p>Toggles the ability to see debug axes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleDebugAxes()</code></pre>
+  </div>
+  
+  
+  <a id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_ToggleSkeletalDebugViews_" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.ToggleSkeletalDebugViews*"></a>
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_ToggleSkeletalDebugViews" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.ToggleSkeletalDebugViews">ToggleSkeletalDebugViews()</h4>
+  <div class="markdown level1 summary"><p>Toggles the ability to see skeletal debugging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleSkeletalDebugViews()</code></pre>
+  </div>
+  
+  
+  <a id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_ToggleUpdatePositions_" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.ToggleUpdatePositions*"></a>
+  <h4 id="Oculus_Movement_Tracking_DriveThirdPartySkeleton_ToggleUpdatePositions" data-uid="Oculus.Movement.Tracking.DriveThirdPartySkeleton.ToggleUpdatePositions">ToggleUpdatePositions()</h4>
+  <div class="markdown level1 summary"><p>Toggles the ability of this script to update positions or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleUpdatePositions()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unity-Movement Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
